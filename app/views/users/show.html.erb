@@ -1,4 +1,4 @@
-<p id="notice"><%= notice %></p>
+<!-- <p id="notice"><%= notice %></p>
 <div id="<%= dom_id @user %>">
 
 <p>
@@ -14,7 +14,21 @@
   <%= @user.age %>
   </span>
 </p>
+</div> -->
+<div class="screen">
+  <div class="header">
+    <h4> <%= @user.name %> Profile</h4>
+  </div>
+  <!-- <img class="background" src="https://pbs.twimg.com/profile_banners/45394577/1384289888/web"> -->
+  <div class="slider">
+    <div class="header1">
+      <!-- <img class="profilepic" src="https://pbs.twimg.com/profile_images/378800000297360664/96d9e7224ec40be585466172a3785249.png"> -->
+     <p> NAME :: <%= @user.name %></p> 
+    </div>
+    <div class="header2">
+      AGE :: <%= @user.age %> 
+    </div>
+  </div>
 </div>
-
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
